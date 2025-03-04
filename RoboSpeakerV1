@@ -1,0 +1,11 @@
+import os
+
+if __name__=='__main__':
+	print("welcome to RoboSpeaker 1.0,Created by Atul")
+	while True:
+		x=input("Enter what you want me to speak\n")
+		if x=="q":
+			os.system("say 'bye friends'")
+			break
+		command=f"say {x}"
+		os.system(command)
